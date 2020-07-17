@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match='^https?://([^/.]+\.)?(alaplaya\.eu)(:[0-9]+)?($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">alaplaya.eu</name>
+    <destination>http://www.alaplaya.eu/</destination>
+  </location>
+
+  <location match='^https?://([^/.]+\.)([^/.]+\.)(alaplaya\.eu)(:[0-9]+)?($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">alaplaya.eu</name>
+    <destination>http://www.alaplaya.eu/</destination>
+  </location>
+
+  <delegate>
+    <uri>../../default.xml</uri>
+  </delegate>
+
+</vpi>

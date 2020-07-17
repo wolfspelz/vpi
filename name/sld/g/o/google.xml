@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match='^https?://(www\.)?google\.([^./]+)\.([^./]+)($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="true">google.\2.\3</name>
+    <delay sec="infinite" bypass="true"/>
+    <topology level="domain"/>
+  </location>
+
+  <delegate>
+    <uri>../../../default.xml</uri>
+  </delegate>
+
+</vpi>

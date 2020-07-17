@@ -1,0 +1,13 @@
+#
+# VPI mapping test data
+#
+# Format:
+#   Document-URL Language expected-LocationURL-as-regex
+# Language is optional. Can be omitted:
+#   Document-URL expected-LocationURL-as-regex
+#
+
+http://www.orkut.com.br/ xmpp:86206e324943d17f76a5d02066872a05045b4a37-[0-9]{2,2}@muc4.virtual-presence.org 
+http://www.orkut.co.in/  xmpp:93798f46630f4770bb2f500092ca75a7c0a4ee2c-[0-9]{2,2}@muc4.virtual-presence.org  
+
+

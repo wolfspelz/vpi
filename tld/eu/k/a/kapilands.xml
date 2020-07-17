@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match='^https?://([^/.]+\.)?(kapilands\.eu)(:[0-9]+)?($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">kapilands.eu</name>
+    <destination>http://www.kapilands.eu/</destination>
+  </location>
+
+  <delegate>
+    <uri>../../default.xml</uri>
+  </delegate>
+
+</vpi>

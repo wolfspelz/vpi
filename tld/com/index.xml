@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match='^https?://([a-zA-Z0-9.-]+\.)?(mail\.live\.com)(:[0-9]+)?($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">\2</name>
+    <destination>http://\2/</destination>
+    <topology level="site"/>
+    <delay sec="infinite" bypass="true"/>
+  </location>
+
+  <location match='^(https?://(.*[.])?(motorsport-total\.com))($|/([^/]*)($|.*$))'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="true">motorsport-total-\5</name>
+    <destination>http://www.motorsport-total.com/</destination>
+    <topology level="category"/>
+  </location>
+
+  <delegate match='^https?://([^/]+\.)?((b|c|d|f|m|y)[^.]*)\.([^.]+)(:[0-9]+)?($|/.*$)'>
+    <uri>\3/index.xml</uri>
+  </delegate>
+
+  <delegate>
+    <uri>default.xml</uri>
+  </delegate>
+
+</vpi>

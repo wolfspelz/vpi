@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match='^(https?://(.*[.])?((zweitgeist|weblin)\.(com|de)))($|/.*room=([a-z0-9]+).*|.*$)'>
+    <service>jabber:muc.castor.local</service>
+    <name>zweitgeist\7</name>
+    <destination>http://www.weblin.com/</destination>
+    <topology level="selection"/>
+  </location>
+
+  <location match='^(https?://(.*[.])?((castor)\.(local)))($|/.*room=([a-z0-9]+).*|.*$)'>
+    <service>jabber:muc.castor.local</service>
+    <name>zweitgeist\7</name>
+    <destination>http://www.castor.local/</destination>
+    <topology level="selection"/>
+  </location>
+
+  <location match='^(https?://((w)+([0-9]*)\.)?([^/]+\.([a-zA-Z]+)))($|/.*$)'>
+    <service>jabber:muc.castor.local</service>
+    <name hash="true">\5</name>
+    <destination>\1</destination>
+    <topology level="domain"/>
+    <displayoptions><usercount multiple='15' crowd='40' massive='80'/></displayoptions>
+  </location>
+
+  <location match='.*'>
+    <service>jabber:muc.castor.local</service>
+    <ignore/>
+    <!--name>nirvana</name-->
+  </location>
+
+</vpi>

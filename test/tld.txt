@@ -1,0 +1,111 @@
+#
+# VPI mapping test data
+#
+# Format:
+#   Document-URL Language expected-LocationURL-as-regex
+# Language is optional. Can be omitted:
+#   Document-URL expected-LocationURL-as-regex
+#
+
+http://www.darkorbit.com                xmpp:fc56a29684d91bdbf6c686ccf32389ed132c6993@muc4.virtual-presence.org
+http://de2.darkorbit.com                xmpp:fc56a29684d91bdbf6c686ccf32389ed132c6993@muc4.virtual-presence.org
+
+http://s5.kapilands.eu                  xmpp:ae1364800fc5e1ba5982289e9985acae555398af@muc4.virtual-presence.org
+http://kapilands.eu                     xmpp:ae1364800fc5e1ba5982289e9985acae555398af@muc4.virtual-presence.org
+
+http://alaplaya.eu                      xmpp:2ebf28657407239fb64ba441ee33fb39d962cb8f@muc4.virtual-presence.org
+http://www.alaplaya.eu                  xmpp:2ebf28657407239fb64ba441ee33fb39d962cb8f@muc4.virtual-presence.org
+http://s4.de.alaplaya.eu                xmpp:2ebf28657407239fb64ba441ee33fb39d962cb8f@muc4.virtual-presence.org
+
+http://de2.empire-online.net            xmpp:5809915b73519ec0a259989acab4da451cabfae6@muc4.virtual-presence.org 
+http://www.empire-online.net            xmpp:5809915b73519ec0a259989acab4da451cabfae6@muc4.virtual-presence.org 
+
+http://s10.caribicislands.org           xmpp:dc44f963b835b99453eafbd59a8e1232384d8c12@muc4.virtual-presence.org
+http://www.caribicislands.org           xmpp:dc44f963b835b99453eafbd59a8e1232384d8c12@muc4.virtual-presence.org
+
+http://server1.puschelfarm.de           xmpp:91d61b5a4f652e27236ab4f8561ef8a9cc95fb8b@muc4.virtual-presence.org
+http://server5.puschelfarm.de           xmpp:91d61b5a4f652e27236ab4f8561ef8a9cc95fb8b@muc4.virtual-presence.org
+http://www.puschelfarm.de               xmpp:91d61b5a4f652e27236ab4f8561ef8a9cc95fb8b@muc4.virtual-presence.org
+
+http://s2.wildguns.de   xmpp:1b7c3f2e660f6ae74b2ff4d063d0ba368e7f19e0@muc4.virtual-presence.org
+http://www.wildguns.de  xmpp:1b7c3f2e660f6ae74b2ff4d063d0ba368e7f19e0@muc4.virtual-presence.org
+
+http://s1.rr-downtown.de        xmpp:1264015d83f61033bfd418008b0cb2de5ebecb7f@muc4.virtual-presence.org
+http://www.rr-downtown.de       xmpp:1264015d83f61033bfd418008b0cb2de5ebecb7f@muc4.virtual-presence.org
+
+http://s2.ikariam.de            xmpp:db6e8f615bf32c8c36b8c25e102ddf3c11901547@muc4.virtual-presence.org
+http://www.ikariam.de/          xmpp:db6e8f615bf32c8c36b8c25e102ddf3c11901547@muc4.virtual-presence.org
+http://board.ikariam.de         xmpp:db6e8f615bf32c8c36b8c25e102ddf3c11901547@muc4.virtual-presence.org
+
+http://www.wauies.de            xmpp:deb0c0a89d7b76e753cd6a62da15531d9a7637a1@muc4.virtual-presence.org
+http://s1.wauies.de/            xmpp:deb0c0a89d7b76e753cd6a62da15531d9a7637a1@muc4.virtual-presence.org
+
+http://www.bitefight.de         xmpp:4b266d6b2ca8995d8560b81055afd61e552d6435@muc4.virtual-presence.org
+http://bitefight.de/            xmpp:4b266d6b2ca8995d8560b81055afd61e552d6435@muc4.virtual-presence.org
+http://s1.bitefight.de/         xmpp:4b266d6b2ca8995d8560b81055afd61e552d6435@muc4.virtual-presence.org
+
+http://www.wurzelimperium.de    xmpp:15a56de123829f7e917273d51f4526c353754fb5@muc4.virtual-presence.org
+http://s1.wurzelimperium.de     xmpp:15a56de123829f7e917273d51f4526c353754fb5@muc4.virtual-presence.org
+http://s23.wurzelimperium.de    xmpp:15a56de123829f7e917273d51f4526c353754fb5@muc4.virtual-presence.org
+
+http://www.earthlost.de         xmpp:1cef7eef8403714bb64718d7dad07d65d3649a8d@muc4.virtual-presence.org
+http://engine5.earthlost.de     xmpp:1cef7eef8403714bb64718d7dad07d65d3649a8d@muc4.virtual-presence.org
+http://portal.earthlost.de      xmpp:1cef7eef8403714bb64718d7dad07d65d3649a8d@muc4.virtual-presence.org
+
+http://de10.die-staemme.de      xmpp:adad6dce4729cacaf515e13dc1e6f10c797e870d@muc4.virtual-presence.org
+http://de18.die-staemme.de      xmpp:adad6dce4729cacaf515e13dc1e6f10c797e870d@muc4.virtual-presence.org
+http://de3.die-staemme.de       xmpp:adad6dce4729cacaf515e13dc1e6f10c797e870d@muc4.virtual-presence.org
+http://die-staemme.de           xmpp:adad6dce4729cacaf515e13dc1e6f10c797e870d@muc4.virtual-presence.org
+http://www.die-staemme.de       xmpp:adad6dce4729cacaf515e13dc1e6f10c797e870d@muc4.virtual-presence.org
+http://wiki.die-staemme.de      xmpp:adad6dce4729cacaf515e13dc1e6f10c797e870d@muc4.virtual-presence.org
+
+http://www.fotolog.com/                   xmpp:ed9e9c7de2bd2d71eb62ea1be7fe5655d22b729f@muc4.virtual-presence.org
+http://account.fotolog.com/               xmpp:ed9e9c7de2bd2d71eb62ea1be7fe5655d22b729f@muc4.virtual-presence.org
+http://account.fotolog.com/profile        xmpp:742175c727012da113be1f7180515f1b4908adad@muc4.virtual-presence.org
+http://account.fotolog.com/chrissiii      xmpp:9a06f3d93210f02afa20d3ea4bf2af349de1b652@muc4.virtual-presence.org
+http://www.fotolog.com/chrissiii          xmpp:9a06f3d93210f02afa20d3ea4bf2af349de1b652@muc4.virtual-presence.org
+http://www.fotolog.com/chrissiii/55641302 xmpp:9a06f3d93210f02afa20d3ea4bf2af349de1b652@muc4.virtual-presence.org
+
+http://mail.live.com               xmpp:bf95c9858d74bacee061fcbf7f8e6f78f9e18338@muc4.virtual-presence.org
+http://by109w.bay109.mail.live.com xmpp:bf95c9858d74bacee061fcbf7f8e6f78f9e18338@muc4.virtual-presence.org
+http://by106w.bay106.mail.live.com xmpp:bf95c9858d74bacee061fcbf7f8e6f78f9e18338@muc4.virtual-presence.org
+
+
+http://www.metroflog.com/                                                        xmpp:59cfee98172c2162733843849be5352476a12482@muc4.virtual-presence.org
+http://www.metroflog.com/pattyokulta                                             xmpp:c47a0d2dcd2b20b394b76bd161cd3ba263b2a0d7@muc4.virtual-presence.org
+http://www.metroflog.com/pattyokulta/calendar/200804                             xmpp:c47a0d2dcd2b20b394b76bd161cd3ba263b2a0d7@muc4.virtual-presence.org
+http://www.metroflog.com/pattyokulta/20081130/k_sexualll_xd?pos=20081202&nf=     xmpp:c47a0d2dcd2b20b394b76bd161cd3ba263b2a0d7@muc4.virtual-presence.org
+
+http://search.conduit.com/                xmpp:cd7f69526bdfdd15c0c55d8cf12d99efd481c3ac@muc4.virtual-presence.org
+#https://search.conduit.com/               xmpp:cd7f69526bdfdd15c0c55d8cf12d99efd481c3ac@muc4.virtual-presence.org
+http://www.conduit.com/                   xmpp:edbb84d95f5490454555056760d33be7e1168fc4@muc4.virtual-presence.org
+
+http://www.ac-adapt.net/meltingdots/      xmpp:6fad40080bfc2e809a73df854697afc6fdec2bc7-0[1-3]@muc4.virtual-presence.org
+http://www.ac-adapt.net/meltingdots/test  xmpp:6fad40080bfc2e809a73df854697afc6fdec2bc7-0[1-3]@muc4.virtual-presence.org
+
+http://ac-adapt.net/denpa/                xmpp:fb19f2ee79f1ef6213cadad2ffd1ebffec9c5862-0[1-3]@muc4.virtual-presence.org
+http://ac-adapt.net/denpa/index.html      xmpp:fb19f2ee79f1ef6213cadad2ffd1ebffec9c5862-0[1-3]@muc4.virtual-presence.org
+http://ac-adapt.net/denpa/sub.html        xmpp:fb776dfc94d8db4bc9d7970c23ddad0bf409d83d-0[1-3]@muc4.virtual-presence.org
+http://ac-adapt.net/denpa/other.html      xmpp:dce330151c61040c739df0eb1c183d23f7939d9d@muc4.virtual-presence.org
+
+http://ac-adapt.net/tay2/index.html       xmpp:6a878a1a8756b61bbb7af438d86bf2d4519ee5ef@muc4.virtual-presence.org
+http://ac-adapt.net/tay2/floor1.html      xmpp:2647c94ae9a47301ed9dd38ed3bbce321b3b07f4@muc4.virtual-presence.org
+http://ac-adapt.net/tay2/floor2.html      xmpp:efd8f49edb3efc6758653d67b2c896f53941b038@muc4.virtual-presence.org
+http://ac-adapt.net/tay2/floor3.html      xmpp:0270a4cfd2f4f129ba64cec0f4b1abe40dde2bdc@muc4.virtual-presence.org
+http://ac-adapt.net/tay2/floor4.html      xmpp:2fa206c6dfc985366c22da79a0fb3ac86fd629c1@muc4.virtual-presence.org
+http://ac-adapt.net/tay2/floor5.html      xmpp:78444130f99c9c82702ce850c94386fafc192c14@muc4.virtual-presence.org
+http://ac-adapt.net/tay2/floor6.html      xmpp:aa497541d8f10e06a9967b5e3e8a06c2aa94bbfc@muc4.virtual-presence.org
+http://ac-adapt.net/tay2/floor7.html      xmpp:812fda8d6d6bce1b8f278ad846eca2b6f50b4d51@muc4.virtual-presence.org
+http://ac-adapt.net/tay2/floor8.html      xmpp:5e725f0410b7ad1c95143f642570a55ff502fc79@muc4.virtual-presence.org
+http://ac-adapt.net/tay2/floor9.html      xmpp:4a843bdb0717a3e8c1e86e2489e9e041032e02df@muc4.virtual-presence.org
+http://ac-adapt.net/tay2/floor10.html     xmpp:e90775c3a01c95eed8b1691446e9330270f939be@muc4.virtual-presence.org
+
+# negativ test (should be the default room on http://ac-adapt.net):
+http://ac-adapt.net/tay2/xyz.html         xmpp:dce330151c61040c739df0eb1c183d23f7939d9d@muc4.virtual-presence.org
+http://ac-adapt.net/tay2/floor99.html     xmpp:dce330151c61040c739df0eb1c183d23f7939d9d@muc4.virtual-presence.org
+
+http://darkorbit.bigpoint.com/       xmpp:e44f4b1e2036097678059f43f772ccd1d168ea17@muc4.virtual-presence.org
+http://xxx.darkorbit.bigpoint.com/   xmpp:e44f4b1e2036097678059f43f772ccd1d168ea17@muc4.virtual-presence.org
+http://xx.yy.darkorbit.bigpoint.com/ xmpp:e44f4b1e2036097678059f43f772ccd1d168ea17@muc4.virtual-presence.org
+http://seafight.bigpoint.com/        xmpp:9c7bceda7ca2c92837e7f026c8667314c6843c89@muc4.virtual-presence.org
+

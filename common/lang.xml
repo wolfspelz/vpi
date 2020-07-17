@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match='^(https?://((w)+([0-9]*)\.)?([^/]+\.([a-zA-Z]+)))($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="true">\5</name>
+    <destination>\1</destination>
+    <displayoptions><usercount multiple='15' crowd='40' massive='80'/></displayoptions>
+    <topology level="language"/>
+    <select tag="random">
+      <option suffix='-01' title='International 1'><tag>random</tag></option>
+      <option suffix='-02' title='International 2'><tag>random</tag></option>
+      <option suffix='-03' title='International 3'><tag>random</tag></option>
+      <option suffix='-04' title='International 4'><tag>random</tag></option>
+      <option suffix='-05' title='International 5'><tag>random</tag></option>
+      <!--option suffix='-zh01' title='中文'><tag>lang:zh</tag></option-->
+      <option suffix='-de01' title='Deutsch'><tag>lang:de</tag></option>
+      <option suffix='-es01' title='Español'><tag>lang:es</tag></option>
+      <option suffix='-fr01' title='Français'><tag>lang:fr</tag></option>
+      <option suffix='-it01' title='Italiano'><tag>lang:it</tag></option>
+      <!--option suffix='-ja01' title='日本語'><tag>lang:ja</tag></option-->
+      <option suffix='-pl01' title='Polski'><tag>lang:pl</tag></option>
+      <option suffix='-pt01' title='Português'><tag>lang:pt</tag></option>
+    </select>
+  </location>
+
+</vpi>

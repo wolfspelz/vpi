@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match='^https?://search\.conduit\.com(:[0-9]+)?($|/$|(/[^/]+))'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">search.condiut.com</name>
+    <delay sec="infinite" bypass="true"/>
+    <topology level="multidomain"/>
+  </location>
+
+  <delegate>
+    <uri>../../default.xml</uri>
+  </delegate>
+
+</vpi>

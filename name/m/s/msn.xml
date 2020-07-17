@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match='^https?://([a-zA-Z0-9.-]+)\.(hotmail\.msn\.com)(:[0-9]+)?($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">\2</name>
+    <destination>http://\2/</destination>
+    <topology level="site"/>
+    <delay sec="infinite" bypass="true"/>
+  </location>
+
+  <delegate match='^https?://([^/]+\.)?msn\.([^.]+)(:[0-9]+)?($|/.*$)'>
+    <uri>../../../common/random-4.xml</uri>
+  </delegate>
+
+</vpi>

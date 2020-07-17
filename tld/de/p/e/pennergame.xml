@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <!-- 
+  http://pennergame.de/
+  http://pennergame.de/overview/
+  http://www.pennergame.de/overview/
+  http://www.pennergame.de/skills/
+  http://www.pennergame.de/skills/pet/ 
+  http://www.pennergame.de/activities/
+  http://www.pennergame.de/city/
+  http://www.pennergame.de/stock/
+  http://www.pennergame.de/fight/overview/
+  http://www.pennergame.de/fight/pet/ 
+  -->
+
+  <location match='^https?://(.+\.)?(pennergame\.[a-zA-Z]+)(:[0-9]+)?(/(overview|skills/pet|skills|activities|city|stock|fight/overview|fight/pet)/).*'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">pennergame.de\4</name>
+    <destination>http://pennergame.de/</destination>
+    <topology level="category"/>
+  </location>
+
+  <location>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">pennergame.de</name>
+    <destination>http://pennergame.de/</destination>
+    <topology level="domain"/>
+  </location>
+
+</vpi>

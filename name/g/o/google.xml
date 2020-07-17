@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match='^https?://(mail\.google\.com)(:[0-9]+)?($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">\1</name>
+    <destination>http://\1/</destination>
+    <delay sec="infinite" bypass="true"/>
+    <topology level="site"/>
+  </location>
+
+  <location match='^https?://(www\.)?google\.([^./]+)/calendar($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name>google.\2</name>
+    <delay sec="infinite" bypass="true"/>
+    <topology level="domain"/>
+  </location>
+
+  <location match='^https?://(www\.)?google\.(de|at|ch)($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name>google.de</name>
+    <!--delay sec="infinite" bypass="true"/-->
+    <topology level="multidomain"/>
+  </location>
+
+  <location match='^https?://(www\.)?google\.([^./]+)($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name>google.\2</name>
+    <!--delay sec="infinite" bypass="true"/-->
+    <topology level="domain"/>
+  </location>
+
+  <delegate>
+    <uri>../../default.xml</uri>
+  </delegate>
+
+</vpi>

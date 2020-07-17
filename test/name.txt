@@ -1,0 +1,54 @@
+#
+# VPI mapping test data
+#
+# Format:
+#   Document-URL Language expected-LocationURL-as-regex
+# Language is optional. Can be omitted:
+#   Document-URL expected-LocationURL-as-regex
+#
+
+http://www.youtube.com                                         xmpp:d7e222c8d7ba68d8030080bd470ae2b2f2cbc06d-[0-9]{2,2}@muc4.virtual-presence.org
+http://www.youtube.com                                      de xmpp:d7e222c8d7ba68d8030080bd470ae2b2f2cbc06d-de01@muc4.virtual-presence.org
+http://www.youtube.com/watch?v=LnA0gffqpXE&feature=rec-fresh   xmpp:1dd773506e3669c8a61707fc0ad381fffd06601f@muc4.virtual-presence.org
+http://youtube.com/watch?v=kCd8cn5FE4M&feature=bz303           xmpp:77e10b8274f2d8c8513f4b739c7f51e6f9d00040@muc4.virtual-presence.org
+http://youtube.com/watch?feature=bz303&v=kCd8cn5FE4M           xmpp:77e10b8274f2d8c8513f4b739c7f51e6f9d00040@muc4.virtual-presence.org
+http://www.youtube.com/watch?feature=bz303&v=ZCd8cn5FE4M       xmpp:9e59f54c96214592d0ad5273b8ff2a1081b47895@muc4.virtual-presence.org
+http://de.youtube.com/watch?feature=bz303v=kCd8cn5FE4M         xmpp:bf5ac26f39d565a06b4531d76b8f45df52dcdbb9@muc4.virtual-presence.org
+
+http://www.facebook.com/                                          xmpp:b7c70898d90f5bb3a32353817e451b646b40299a-[0-9]{2,2}@muc4.virtual-presence.org
+http://www.facebook.com/home.php                                  xmpp:b7c70898d90f5bb3a32353817e451b646b40299a-[0-9]{2,2}@muc4.virtual-presence.org
+http://www.facebook.com/home.php?ref=logo                         xmpp:b7c70898d90f5bb3a32353817e451b646b40299a-[0-9]{2,2}@muc4.virtual-presence.org
+http://www.facebook.com/profile.php?id=601213600                  xmpp:755bffbc37324879ba1343613e62366a5626a7fe@muc4.virtual-presence.org
+http://de.www.facebook.com/profile.php?id=601213600               xmpp:755bffbc37324879ba1343613e62366a5626a7fe@muc4.virtual-presence.org
+http://de.www.facebook.com:80/profile.php?id=601213600            xmpp:755bffbc37324879ba1343613e62366a5626a7fe@muc4.virtual-presence.org
+http://www.facebook.com/home.php#/profile.php?id=645254151        xmpp:0d367ea3b9ce2d04995d136438f26b992f1e1a44@muc4.virtual-presence.org
+http://www.facebook.com/home.php#/profile.php?id=522911397&ref=nf xmpp:93a4915ee5b24d5a11af72ec01635b85eb5a1496@muc4.virtual-presence.org
+http://apps.facebook.com/weblinloca/                              xmpp:2dcb459f978958e33352f20450c6322f0cd3f3bf@muc4.virtual-presence.org
+
+http://hi5.com xmpp:aa5cf872baf019e6efe188f94db7d8f5e3f2ed50-[0-9]{2,2}@muc4.virtual-presence.org
+http://www.hi5.com xmpp:aa5cf872baf019e6efe188f94db7d8f5e3f2ed50-[0-9]{2,2}@muc4.virtual-presence.org
+
+http://google.com xmpp:google.com@muc4.virtual-presence.org
+http://www.google.com xmpp:google.com@muc4.virtual-presence.org
+http://maps.google.com xmpp:59c82859b2a977f9d94464f4f10bdbd3c2500078@muc4.virtual-presence.org
+
+http://www.friendster.com xmpp:d70f16c48452bb327d8ae26fa899680304669e6a-[0-9]{2,2}@muc4.virtual-presence.org
+
+http://us.f511.mail.yahoo.com/ xmpp:14e6d39eecb62db189457b8a48da6ec511a491a0@muc4.virtual-presence.org
+http://de.f262.mail.yahoo.com/ xmpp:a702a6fe23a81fca6614b3cc42e4427febe883e6@muc4.virtual-presence.org
+
+http://mail.google.com/ xmpp:1fe099df5f46e4c3c7e8ff6d5a72f695a06acad4@muc4.virtual-presence.org
+
+http://by105fd.bay105.hotmail.msn.com/ xmpp:448f5c18489871f737dbab485b0493e2a49f7cf9@muc4.virtual-presence.org
+http://by112fd.bay112.hotmail.msn.com/ xmpp:448f5c18489871f737dbab485b0493e2a49f7cf9@muc4.virtual-presence.org
+
+http://www.google.com.mx/ xmpp:161eaea94c705bb349e5ffeb1e97dea6919a3c87@muc4.virtual-presence.org
+
+http://travian.de     xmpp:bd560a341d63abce5ae903b209d969b6aa9baf43@muc4.virtual-presence.org
+http://www.travian.de xmpp:bd560a341d63abce5ae903b209d969b6aa9baf43@muc4.virtual-presence.org
+http://travian.ba     xmpp:525a027ec85f86ad8be44c30ecf63a4dcb983245@muc4.virtual-presence.org 
+http://travian.co.ee  xmpp:c6c53f25abd588d294f3749b60e4d80fec812886@muc4.virtual-presence.org
+http://travian.co.uk  xmpp:1ef40dcc5a567e7db20e1e16ec788c10bca5a229@muc4.virtual-presence.org
+http://travian.com.ua xmpp:e38c2b4e250333f1b3f7bf3ba83fd21c81e13163@muc4.virtual-presence.org
+http://travian.com.tr xmpp:a255ccef08318ce02f6c49f0f79af37e5907664e@muc4.virtual-presence.org
+http://travian.co.il  xmpp:6aa0f387c6b8aee312b33fbeddb844bf940d8327@muc4.virtual-presence.org

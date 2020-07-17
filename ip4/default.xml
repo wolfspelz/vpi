@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match="^https?://([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)(:[0-9]+)?($|/.*$)">
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="true">\1</name>
+    <destination>\1</destination>
+    <topology level="host" />
+  </location>
+  
+  <delegate><uri>../default.xml</uri></delegate>
+
+</vpi>

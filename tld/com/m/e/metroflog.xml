@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match='^https?://([^/]+\.)?(metroflog\.([^./]+))(:[0-9]+)?($|/$|(/[^/]+))'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">\2\6</name>
+    <destination>http://www.\2/</destination>
+    <topology level="thread"/>
+  </location>
+
+  <delegate>
+    <uri>../../default.xml</uri>
+  </delegate>
+
+</vpi>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <!--
+    - respectively 3 Rooms per page:
+    http://ac-adapt.net/denpa/sub.html
+    http://ac-adapt.net/denpa/index.html
+    http://ac-adapt.net/denpa/
+
+    - respectively one room per page:
+    http://ac-adapt.net/tay2/index.html
+
+    http://ac-adapt.net/tay2/floor1.html
+    http://ac-adapt.net/tay2/floor2.html
+    http://ac-adapt.net/tay2/floor3.html
+    http://ac-adapt.net/tay2/floor4.html
+    http://ac-adapt.net/tay2/floor5.html
+    http://ac-adapt.net/tay2/floor6.html
+    http://ac-adapt.net/tay2/floor7.html
+    http://ac-adapt.net/tay2/floor8.html
+    http://ac-adapt.net/tay2/floor9.html
+    http://ac-adapt.net/tay2/floo10.html
+
+    - default:
+    http://ac-adapt.net/
+  -->
+
+  <location match='^https?://(.+\.)?(ac-adapt\.[a-zA-Z]+)(:[0-9]+)?/meltingdots($|/.*$)?'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">ac-adapt.net/meltingdots</name>
+    <destination>http://ac-adapt.net/meltingdots</destination>
+    <topology level="category"/>
+    <select tag="random">
+      <option suffix='-01' title='Room 1'><tag>random</tag></option>
+      <option suffix='-02' title='Room 2'><tag>random</tag></option>
+      <option suffix='-03' title='Room 3'><tag>random</tag></option>
+    </select>
+  </location>
+
+  <location match='^https?://(.+\.)?(ac-adapt\.[a-zA-Z]+)(:[0-9]+)?/denpa/sub\.html'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">ac-adapt.net/denpa/sub.html</name>
+    <destination>http://ac-adapt.net/denpa/sub.html</destination>
+    <topology level="category"/>
+    <select tag="random">
+      <option suffix='-01' title='Room 1'><tag>random</tag></option>
+      <option suffix='-02' title='Room 2'><tag>random</tag></option>
+      <option suffix='-03' title='Room 3'><tag>random</tag></option>
+    </select>
+  </location>
+
+  <location match='^https?://(.+\.)?(ac-adapt\.[a-zA-Z]+)(:[0-9]+)?/denpa/(index.html|$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">ac-adapt.net/denpa/index.html</name>
+    <destination>http://ac-adapt.net/denpa/</destination>
+    <topology level="category"/>
+    <select tag="random">
+      <option suffix='-01' title='Room 1'><tag>random</tag></option>
+      <option suffix='-02' title='Room 2'><tag>random</tag></option>
+      <option suffix='-03' title='Room 3'><tag>random</tag></option>
+    </select>
+  </location>
+
+  <location match='^https?://(.+\.)?(ac-adapt\.[a-zA-Z]+)(:[0-9]+)?/tay2/(floor([0-9]|10+)|index)+\.html'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">ac-adapt.net/tay2/\4.html</name>
+    <destination>http://ac-adapt.net/tay2/\4.html</destination>
+    <topology level="category"/>
+  </location>
+
+  <location>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">ac-adapt.net</name>
+    <destination>http://ac-adapt.net/</destination>
+    <topology level="domain"/>
+  </location>
+
+</vpi>

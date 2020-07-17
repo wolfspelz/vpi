@@ -1,0 +1,44 @@
+#
+# VPI mapping test data
+#
+# Format:
+#   Document-URL Language expected-LocationURL-as-regex
+# Language is optional. Can be omitted:
+#   Document-URL expected-LocationURL-as-regex
+#
+
+# Example
+http://www.heise.de    ^xmpp:e626d567bbc0d33b27498343c587d39b10d1c668@muc4\.virtual-presence\.org$
+http://www.heise.de de ^xmpp:e626d567bbc0d33b27498343c587d39b10d1c668@muc4\.virtual-presence\.org$
+
+# Case insensitive host names
+http://www.heise.de    ^xmpp:e626d567bbc0d33b27498343c587d39b10d1c668@muc4\.virtual-presence\.org$
+http://www.Heise.de    ^xmpp:e626d567bbc0d33b27498343c587d39b10d1c668@muc4\.virtual-presence\.org$
+http://www.Heise.de/A.php?b=c&D=E#xx    ^xmpp:e626d567bbc0d33b27498343c587d39b10d1c668@muc4\.virtual-presence\.org$
+http://WWW.HEISE.DE    ^xmpp:e626d567bbc0d33b27498343c587d39b10d1c668@muc4\.virtual-presence\.org$
+
+# Specials
+http://www.weblin.com  xmpp:zweitgeist@muc4.virtual-presence.org
+http://www.spiegel.de  xmpp:acf9dc42a085d1493aa743dd1cdb7abaea589a93[1-5]-no-lang@muc4.virtual-presence.org
+
+# Partner
+http://www.pennergame.de/city/           xmpp:da55cb769bfd64f2fae017035bfd58a7aa31ccc8@muc4.virtual-presence.org
+http://pennergame.de/                    xmpp:ac088e8aeec190d4c2d4901528c06ce97f896060@muc4.virtual-presence.org
+http://pennergame.de/overview/           xmpp:896d365699e2c76e330af26168ff608426f308e6@muc4.virtual-presence.org
+http://www.pennergame.de/overview/       xmpp:896d365699e2c76e330af26168ff608426f308e6@muc4.virtual-presence.org
+http://www.pennergame.de/skills/         xmpp:cebc088cb63c63c8ae7e468b41b5b92a5a0e0035@muc4.virtual-presence.org
+http://www.pennergame.de/skills/pet/     xmpp:f4547d775c6712aaf2c2cc0f8bfb54bc68b96c2d@muc4.virtual-presence.org
+#http://www.pennergame.de/activities/
+#http://www.pennergame.de/city/
+#http://www.pennergame.de/stock/
+#http://www.pennergame.de/fight/overview/
+#http://www.pennergame.de/fight/pet/
+
+# ip forwards to tld
+http://80.154.16.235/    xmpp:417cb62f9dd389273a7bf560a854bd67f591ce3e@muc4.virtual-presence.org
+http://community.yam.de/ xmpp:417cb62f9dd389273a7bf560a854bd67f591ce3e@muc4.virtual-presence.org
+
+# .com a-z -> muc4
+http://www.virtualworldsnews.com/2008/11/metaversum-partners-with-bigpoint-for-presence-in-twinity.html xmpp:65c7033274f4c74d71c778d37afe2a2a156a7590@muc4.virtual-presence.org
+http://www.virtualworldsnews.com/                                                                       xmpp:65c7033274f4c74d71c778d37afe2a2a156a7590@muc4.virtual-presence.org
+

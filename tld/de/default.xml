@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match='^https?://([^/]+\.)?ebay\.de($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name>ebay.de</name>
+    <topology level="site"/>
+    <!--delay sec="0"/-->
+  </location>
+
+  <location match='^(https?://(.*\.)?(icewars\.de))($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">\3</name>
+    <destination>http://www.icewars.de/</destination>
+    <topology level="domain"/>
+    <!--delay sec="0"/-->
+  </location>
+
+  <location match='^(https?://(.*\.)?(spiegel\.de))($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">\3</name>
+    <destination>http://www.spiegel.de/</destination>
+    <topology level="domain"/>
+
+    <select>
+      <option suffix='1-no-lang' title='Politics'/>
+      <option suffix='2-no-lang' title='Economy'/>
+      <option suffix='3-no-lang' title='Sport'/>
+      <option suffix='4-no-lang' title='Networld'/>
+      <option suffix='5-no-lang' title='Science'/>
+    </select>
+
+    <!--delay sec="0"/-->
+  </location>
+
+  <location match='^(https?://.*\.(beepworld\.de/members88/wuff230))($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">power-radio-pur2005.beep.de</name>
+    <destination>http://www.power-radio-pur2005.beep.de</destination>
+    <topology level="domain"/>
+    <!--delay sec="0"/-->
+  </location>
+
+  <location match='^((https?://(.*\.)?)(beepworld\.de/members[0-9]*/[^/]*/))($|.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">\4</name>
+    <destination>\2\4</destination>
+    <topology level="channel"/>
+    <!--delay sec="0"/-->
+  </location>
+
+  <delegate>
+    <uri>../default.xml</uri>
+  </delegate>
+
+</vpi>

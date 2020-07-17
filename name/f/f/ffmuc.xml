@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <!-- Special mappings -->
+  <location match='^https?://[^/]+/(berlin-meetup).*'>
+    <name>berlin-meetup</name>
+    <service>xmpp:conference.conversations.im</service>
+    <topology level="article" />
+  </location>
+
+  <delegate>
+    <uri>../../default.xml</uri>
+  </delegate>
+
+</vpi>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <!-- 
+  http://youtube.com/watch?v=kCd8cn5FE4M&feature=bz303
+  http://youtube.com/watch?feature=bz303&v=kCd8cn5FE4M
+  http://www.youtube.com/watch?feature=bz303&v=ZCd8cn5FE4M
+  http://de.youtube.com/watch?feature=bz303v=kCd8cn5FE4M
+  http://www.youtube.com/
+  -->
+  
+  <!-- Special mappings -->
+  <location match='^https?://(www.|([^.]+\.))?(youtube\.[a-zA-Z]+)(:[0-9]+)?/.*v=(v_riuu4XU6Q).*'>
+    <name>berlin-meetup</name>
+    <service>xmpp:conference.conversations.im</service>
+    <topology level="article" />
+  </location>
+
+  <!-- A room per video -->
+  <location match='^https?://(www.|([^.]+\.))?(youtube\.[a-zA-Z]+)(:[0-9]+)?/.*v=([-+_a-zA-Z0-9]+).*'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">\2\3-\5</name>
+    <destination>http://www.youtube.com/watch?v=\5</destination>
+    <zone id='youtube-video' title='YouTube per video'/>
+    <topology level="article"/>
+  </location>
+
+  <!-- main page without video ID -->
+  <location match='^https?://(www.|([^.]+\.))?(youtube\.[a-zA-Z]+)(:[0-9]+)?'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name hash="SHA1">\3</name>
+    <destination>http://youtube.com/</destination>
+    <zone id='youtube-main' title='YouTube Homepage'/>
+    <topology level="language"/>
+    <select tag="random">
+      <option suffix='-01' title='International 1'><tag>random</tag></option>
+      <option suffix='-02' title='International 2'><tag>random</tag></option>
+      <option suffix='-03' title='International 3'><tag>random</tag></option>
+      <option suffix='-04' title='International 4'><tag>random</tag></option>
+      <option suffix='-05' title='International 5'><tag>random</tag></option>
+      <!--option suffix='-zh01' title='中文'><tag>lang:zh</tag></option-->
+      <option suffix='-de01' title='Deutsch'><tag>lang:de</tag></option>
+      <option suffix='-es01' title='Español'><tag>lang:es</tag></option>
+      <option suffix='-fr01' title='Français'><tag>lang:fr</tag></option>
+      <option suffix='-it01' title='Italiano'><tag>lang:it</tag></option>
+      <!--option suffix='-ja01' title='日本語'><tag>lang:ja</tag></option-->
+      <option suffix='-pl01' title='Polski'><tag>lang:pl</tag></option>
+      <option suffix='-pt01' title='Português'><tag>lang:pt</tag></option>
+    </select>
+  </location>
+
+  <delegate>
+    <uri>../../default.xml</uri>
+  </delegate>
+
+</vpi>

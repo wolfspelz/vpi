@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <delegate match='^https?://([^/]+\.)?raidrush\.([^.]+)(:[0-9]+)?($|/.*$)'>
+    <uri>../../../../common/random-4.xml</uri>
+  </delegate>
+
+</vpi>

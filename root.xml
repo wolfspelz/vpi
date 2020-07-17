@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <delegate match='^(http://test[^.]*\.weblin\.com)($|/.*$)'>
+    <uri>test.xml</uri>
+  </delegate>
+
+  <delegate match='^(https?://([^/]*[.])?((zweitgeist|weblin)\.(com|de)))($|/.*$)'>
+    <uri>weblin.xml</uri>
+  </delegate>
+
+  <!-- handle IP4 addresses -->
+  <delegate match='^https?://[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(:[0-9]+)?($|/.*$)'>
+    <uri>ip4/index.xml</uri>
+  </delegate>
+
+  <!-- pipe everything thru the brand name handler -->
+  <delegate>
+    <uri>name/index.xml</uri>
+  </delegate>
+
+</vpi>

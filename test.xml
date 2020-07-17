@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <location match='^(http://test\.weblin\.com)($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name>test.weblin.com</name>
+
+    <topology level="site"/> <!-- (multidomain|domain|host|site|category|channel|thread|article|query|unique|language|selection|none) -->
+    <contentrating fsk="16"/> <!-- fsk=(0)#1 fsk=(6|12)#2 fsk=(16)#3 fsk=(18)#4 default#3 --> <!-- mpaa="" pics="" -->
+    <displayoptions><usercount multiple='12' crowd='40' massive='80'/></displayoptions>
+
+    <select tag='random'>
+      <option suffix='-1-no-lang-random' title='1'><tag>random</tag></option>
+      <option suffix='-2-no-lang-random' title='2'><tag>random</tag></option>
+      <option suffix='-1-no-lang' title='1'/>
+      <option suffix='-2-no-lang' title='2'/>
+      <option suffix='-3-no-lang' title='3'/>
+      <option suffix='-de1' title='de1'><tag>lang:de</tag></option>
+      <option suffix='-de2' title='de2'><tag>lang:de</tag></option>
+      <option suffix='-de3' title='de3'><tag>lang:de</tag></option>
+      <option suffix='-en1' title='en1'><tag>lang:en</tag></option>
+      <option suffix='-en2' title='en2'><tag>lang:en</tag></option>
+      <option suffix='-en3' title='en3'><tag>lang:en</tag></option>
+      <option suffix='-de-no-lang' title='Deutsch'/>
+      <option suffix='-de-no-title-no-lang'/>
+      <option suffix='-ch-no-lang' title='Schweiz' description='Hier nur schwizerdütsch'/>
+      <option suffix='-ch' title='Schweiz' description='Hier nur schwizerdütsch'><tag>lang:ch</tag></option>
+      <option suffix='-en-biz' title='Business - english'><tag>lang:en</tag><tag>business</tag></option>
+      <option suffix='-de-biz' title='Business - deutsch'><tag>lang:de</tag><tag>business</tag></option>
+      <option suffix='-de-flirt25' title='Flirt25' description='Flirten was das Zeug hält'><tag>lang:de</tag><tag>flirt</tag></option>
+    </select>
+
+  </location>
+
+  <delegate>
+    <uri>default.xml</uri>
+  </delegate>
+
+</vpi>
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <delegate match='^https?://([^/]+\.)?(co)\.([^.]+)(:[0-9]+)?($|/.*$)'>
+    <uri>\2/index.xml</uri>
+  </delegate>
+
+  <!--
+  <delegate>
+    <uri>../../tld/in/index.xml</uri>
+  </delegate>
+  -->
+
+  <delegate>
+    <uri>../default.xml</uri>
+  </delegate>
+
+</vpi>

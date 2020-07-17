@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <!-- After we tried the brand names -->
+
+  <!-- Let certain ccSLD domains handle it hierarchically -->
+  <delegate match='^https?://[^/:]*\.([^.]+)\.(br|in)(:[0-9]+)?($|/.*$)'>
+    <uri>../sld/\2/index.xml</uri>
+  </delegate>
+
+  <!-- ... other domains in the ccTLD hierarchy ...-->
+  <delegate match='^https?://[^/:]*\.(com|de|eu|lt|net|org|pl|ws)(:[0-9]+)?($|/.*$)'>
+    <uri>../tld/\1/index.xml</uri>
+  </delegate>
+
+  <!-- ... or go straight to the exit -->
+  <delegate>
+    <uri>../default.xml</uri>
+  </delegate>
+
+</vpi>

@@ -1,0 +1,9 @@
+#
+# VPI mapping test data
+#
+# Format:
+#   Document-URL Language expected-LocationURL-as-regex
+# Language is optional. Can be omitted:
+#   Document-URL expected-LocationURL-as-regex
+#
+

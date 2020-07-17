@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vpi xmlns='http://virtual-presence.org/schemas/vpi'>
+
+  <Info
+   Version="1"
+   Description="This is the mapping for the weblin domains"
+   AdminContact="admin@weblin.com"
+   TechContact="admin@weblin.com"
+   TimeToLive="3600"
+   />
+
+  <location match='^(https?://blog\.weblin\.(com|de))($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name>zweitgeist-blog</name>
+    <destination>http://blog.weblin.com/</destination>
+  </location>
+  <location match='^(https?://de\.blog\.weblin\.com)($|/.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name>zweitgeist-blog</name>
+    <destination>http://de.blog.weblin.com/</destination>
+  </location>
+
+  <location match='^(https?://(.*[.])?((zweitgeist|weblin)\.(com|de)))($|/.*room=([a-z0-9]+).*|.*$)'>
+    <service>jabber:muc4.virtual-presence.org</service>
+    <name>zweitgeist\7</name>
+    <destination>http://www.weblin.com/</destination>
+    <topology level="selection"/>
+  </location>
+
+  <delegate>
+    <uri>default.xml</uri>
+  </delegate>
+
+</vpi>
